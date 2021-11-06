@@ -1,0 +1,28 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: firstapp
+  namespace: first-homework
+  labels:
+    app: firstapp
+spec:
+  selector:
+    matchLabels:
+      app: firstapp
+  replicas: 2
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
+  template:
+    metadata:
+      labels:
+        app: firstapp
+    spec:
+      containers:
+        - image: eugene89/firstapp
+          name: firstapp
+          ports:
+            - containerPort: 8080
