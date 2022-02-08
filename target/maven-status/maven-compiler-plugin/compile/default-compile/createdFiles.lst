@@ -1,0 +1,10 @@
+com\notification\client\dto\Message.class
+com\notification\client\Receiver.class
+com\notification\repository\NoticeRepository.class
+com\notification\service\NoticeService.class
+com\notification\config\ReceiverConfig.class
+com\notification\controller\NotificationController.class
+com\notification\NotificationApplication.class
+com\notification\models\Notice.class
+com\notification\controller\dto\NoticeRequest.class
+com\notification\controller\dto\NoticeResponse.class
